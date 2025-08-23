@@ -89,3 +89,4 @@ target/
 .mypy_cache/
 data/
 uberenv/
+/run_information.json
