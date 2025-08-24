@@ -49,7 +49,7 @@ if __name__ == "__main__":
     # make the transformer
     encoder = ColumnTransformer([
         ("ohe", OneHotEncoder(drop="first",sparse_output=False), ["region","day_of_week"])
-        ], remainder="passthrough", n_jobs=-1,force_int_remainder_cols=False)
+        ], remainder="passthrough", n_jobs=-1)
         
     # fit the transformer
     encoder.fit(X_train)
